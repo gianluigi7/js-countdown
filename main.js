@@ -13,11 +13,13 @@ function countdown() {
     
     if (seconds === 0) {
         countdownEl.innerHTML = "Buon anno!";
-        return;
+        clearInterval(countdown);
     }
         
-    
-    seconds--;
+    else {
+        seconds--;
+
+    }
 }
 
 setInterval(countdown, 1000);
